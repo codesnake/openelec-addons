@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="service.multimedia.vdr-addon"
+       name="vdr-addon"
+       version="4.1.6"
+       provider-name="openelec.tv">
+  <requires>
+    <import addon="os.openelec.tv" version="4.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service"
+             library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>vdr: A powerful DVB TV application</summary>
+    <description>
+This project describes how to build your own digital satellite receiver and video disk recorder. It is based mainly on the DVB-S digital satellite receiver card, which used to be available from Fujitsu Siemens and the driver software developed by the LinuxTV project.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="service.multimedia.tvheadend"
+       name="tvheadend"
+       version="4.1.2"
+       provider-name="openelec.tv">
+  <requires>
+    <import addon="os.openelec.tv" version="4.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service"
+             library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>tvheadend (Version: 3.4.27): a TV streaming server for Linux supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, IPTV, and Analog video (V4L) as input sources.</summary>
+    <description>
+Tvheadend (Version: 3.4.27) is a TV streaming server for Linux supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, IPTV, and Analog video (V4L) as input sources. It also comes with a powerful and easy to use web interface both used for configuration and day-to-day operations, such as searching the EPG and scheduling recordings. Even so, the most notable feature of Tvheadend is how easy it is to set up: Install it, navigate to the web user interface, drill into the TV adapters tab, select your current location and Tvheadend will start scanning channels and present them to you in just a few minutes. If installing as an Addon a reboot is needed
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="driver.remote.imon-mce"
+       name="imon-mce"
+       version="4.1.0"
+       provider-name="openelec.tv">
+  <requires>
+    <import addon="os.openelec.tv" version="4.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service"
+             library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>imon-mce: a driver to add support for MCE remotes to the imon driver</summary>
+    <description>
+imon-mce is a driver to add support for MCE remotes to the imon driver. To readd imon remote support uninstall or disable this addon again.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="driver.dvb.hdhomerun"
+       name="hdhomerun"
+       version="4.1.2"
+       provider-name="openelec.tv">
+  <requires>
+    <import addon="os.openelec.tv" version="4.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>A linux DVB driver for the HDHomeRun (http://www.silicondust.com).</summary>
+    <description>
+A linux DVB driver for the HDHomeRun (http://www.silicondust.com).
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="driver.dvb.sundtek-mediatv"
+       name="sundtek-mediatv"
+       version="4.1.5"
+       provider-name="openelec.tv">
+  <requires>
+    <import addon="os.openelec.tv" version="4.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script"
+             library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Sundtek USB Stick DVB userspace driver</summary>
+    <description>
+Driver for Sundtek MediaTV Pro (DVB-C, DVB-T, AnalogTV, Composite, S-Video, FM-Radio USB Stick) and Sundtek SkyTV Ultimate (DVB-S/S2 USB).
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="repository.unofficial.addon.pro"
+                name="Unofficial [COLOR FF757677]Open[/COLOR][COLOR FF8ABEE2]ELEC[/COLOR] Mediacenter OS Add-ons"
+                version="4.1.2"
+                provider-name="unofficial.addon.pro">
+        <extension point="xbmc.addon.repository"
+                name="Unofficial OpenELEC.tv Add-on Repository">
+                <info>https://raw.github.com/codesnake/openelec-unofficial-addons/4.1/Amlogic/arm/addons.xml</info>
+                <checksum>https://raw.github.com/codesnake/openelec-unofficial-addons/4.1/Amlogic/arm/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.github.com/codesnake/openelec-unofficial-addons/4.1/Amlogic/arm</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary>Unofficial addon repository for OpenELEC</summary>
+                <description>
+[COLOR orange]Use with care. There will be NO end user support for addons in this repository[/COLOR]
+                </description>
+                <disclaimer>This is an unofficial addon repository. please don't ask for support in openelec forum / irc channel</disclaimer>
+                <platform>all</platform>
+        </extension>
+</addon>
+<addon id="service.multimedia.boblightd"
+       name="boblightd"
+       version="4.1.2"
+       provider-name="openelec.tv">
+  <requires>
+    <import addon="os.openelec.tv" version="4.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service"
+             library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>boblightd: an ambilight controller.</summary>
+    <description>
+Boblight's main purpose is to create light effects from an external input, such as a video stream.
+
+See this thread on the Openelec forums for howto and demonstration: http://bit.ly/oe-boblight
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+</addons>
