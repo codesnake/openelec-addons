@@ -2,10 +2,10 @@
 <addons>
 <addon id="service.multimedia.vdr-addon"
        name="vdr-addon"
-       version="4.1.6"
+       version="4.1.7"
        provider-name="openelec.tv">
   <requires>
-    <import addon="os.openelec.tv" version="4.0"/>
+    <import addon="os.openelec.tv" version="4.2"/>
     <import addon="xbmc.python" version="2.1.0"/>
 
   </requires>
@@ -13,6 +13,7 @@
              library="default.py">
         <provides>executable</provides>
   </extension>
+
   <extension point="xbmc.addon.metadata">
     <summary>vdr: A powerful DVB TV application</summary>
     <description>
@@ -29,7 +30,7 @@ This project describes how to build your own digital satellite receiver and vide
        version="4.1.2"
        provider-name="openelec.tv">
   <requires>
-    <import addon="os.openelec.tv" version="4.0"/>
+    <import addon="os.openelec.tv" version="4.2"/>
     <import addon="xbmc.python" version="2.1.0"/>
 
   </requires>
@@ -37,10 +38,11 @@ This project describes how to build your own digital satellite receiver and vide
              library="default.py">
         <provides>executable</provides>
   </extension>
+
   <extension point="xbmc.addon.metadata">
-    <summary>tvheadend (Version: 3.4.27): a TV streaming server for Linux supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, IPTV, and Analog video (V4L) as input sources.</summary>
+    <summary>tvheadend (Version: 3.9.1083): a TV streaming server for Linux supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, IPTV, and Analog video (V4L) as input sources.</summary>
     <description>
-Tvheadend (Version: 3.4.27) is a TV streaming server for Linux supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, IPTV, and Analog video (V4L) as input sources. It also comes with a powerful and easy to use web interface both used for configuration and day-to-day operations, such as searching the EPG and scheduling recordings. Even so, the most notable feature of Tvheadend is how easy it is to set up: Install it, navigate to the web user interface, drill into the TV adapters tab, select your current location and Tvheadend will start scanning channels and present them to you in just a few minutes. If installing as an Addon a reboot is needed
+Tvheadend (Version: 3.9.1083) is a TV streaming server for Linux supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, IPTV, and Analog video (V4L) as input sources. It also comes with a powerful and easy to use web interface both used for configuration and day-to-day operations, such as searching the EPG and scheduling recordings. Even so, the most notable feature of Tvheadend is how easy it is to set up: Install it, navigate to the web user interface, drill into the TV adapters tab, select your current location and Tvheadend will start scanning channels and present them to you in just a few minutes. If installing as an Addon a reboot is needed
     </description>
     <disclaimer>
 
@@ -53,7 +55,7 @@ Tvheadend (Version: 3.4.27) is a TV streaming server for Linux supporting DVB-S,
        version="4.1.0"
        provider-name="openelec.tv">
   <requires>
-    <import addon="os.openelec.tv" version="4.0"/>
+    <import addon="os.openelec.tv" version="4.2"/>
     <import addon="xbmc.python" version="2.1.0"/>
 
   </requires>
@@ -61,6 +63,7 @@ Tvheadend (Version: 3.4.27) is a TV streaming server for Linux supporting DVB-S,
              library="default.py">
         <provides>executable</provides>
   </extension>
+
   <extension point="xbmc.addon.metadata">
     <summary>imon-mce: a driver to add support for MCE remotes to the imon driver</summary>
     <description>
@@ -77,7 +80,7 @@ imon-mce is a driver to add support for MCE remotes to the imon driver. To readd
        version="4.1.2"
        provider-name="openelec.tv">
   <requires>
-    <import addon="os.openelec.tv" version="4.0"/>
+    <import addon="os.openelec.tv" version="4.2"/>
     <import addon="xbmc.python" version="2.1.0"/>
 
   </requires>
@@ -85,6 +88,7 @@ imon-mce is a driver to add support for MCE remotes to the imon driver. To readd
              library="default.py">
         <provides>executable</provides>
   </extension>
+
   <extension point="xbmc.addon.metadata">
     <summary>A linux DVB driver for the HDHomeRun (http://www.silicondust.com).</summary>
     <description>
@@ -101,7 +105,7 @@ A linux DVB driver for the HDHomeRun (http://www.silicondust.com).
        version="4.1.5"
        provider-name="openelec.tv">
   <requires>
-    <import addon="os.openelec.tv" version="4.0"/>
+    <import addon="os.openelec.tv" version="4.2"/>
     <import addon="xbmc.python" version="2.1.0"/>
 
   </requires>
@@ -109,6 +113,7 @@ A linux DVB driver for the HDHomeRun (http://www.silicondust.com).
              library="default.py">
         <provides>executable</provides>
   </extension>
+
   <extension point="xbmc.addon.metadata">
     <summary>Sundtek USB Stick DVB userspace driver</summary>
     <description>
@@ -144,7 +149,7 @@ Driver for Sundtek MediaTV Pro (DVB-C, DVB-T, AnalogTV, Composite, S-Video, FM-R
        version="4.1.2"
        provider-name="openelec.tv">
   <requires>
-    <import addon="os.openelec.tv" version="4.0"/>
+    <import addon="os.openelec.tv" version="4.2"/>
     <import addon="xbmc.python" version="2.1.0"/>
 
   </requires>
@@ -152,6 +157,7 @@ Driver for Sundtek MediaTV Pro (DVB-C, DVB-T, AnalogTV, Composite, S-Video, FM-R
              library="default.py">
         <provides>executable</provides>
   </extension>
+
   <extension point="xbmc.addon.metadata">
     <summary>boblightd: an ambilight controller.</summary>
     <description>
