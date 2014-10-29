@@ -131,9 +131,9 @@ Driver for Sundtek MediaTV Pro (DVB-C, DVB-T, AnalogTV, Composite, S-Video, FM-R
                 provider-name="unofficial.addon.pro">
         <extension point="xbmc.addon.repository"
                 name="Unofficial OpenELEC.tv Add-on Repository">
-                <info>https://raw.github.com/codesnake/openelec-unofficial-addons/4.1/Amlogic/arm/addons.xml</info>
-                <checksum>https://raw.github.com/codesnake/openelec-unofficial-addons/4.1/Amlogic/arm/addons.xml.md5</checksum>
-                <datadir zip="true">https://raw.github.com/codesnake/openelec-unofficial-addons/4.1/Amlogic/arm</datadir>
+                <info>https://raw.github.com/codesnake/openelec-unofficial-addons/4.1/Meson8-K200/arm/addons.xml</info>
+                <checksum>https://raw.github.com/codesnake/openelec-unofficial-addons/4.1/Meson8-K200/arm/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.github.com/codesnake/openelec-unofficial-addons/4.1/Meson8-K200/arm</datadir>
         </extension>
         <extension point="xbmc.addon.metadata">
                 <summary>Unofficial addon repository for OpenELEC</summary>
