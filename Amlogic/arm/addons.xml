@@ -133,11 +133,9 @@ This project describes how to build your own digital satellite receiver and vide
     <import addon="xbmc.python" version="2.1.0"/>
 
   </requires>
-  <extension point="xbmc.service"
-             library="default.py">
-        <provides>executable</provides>
+  <extension point="xbmc.service" library="default.py">
+    <provides>executable</provides>
   </extension>
-
   <extension point="xbmc.addon.metadata">
     <summary>tvheadend (Version: 3.9.2182): a TV streaming server for Linux supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, IPTV, and Analog video (V4L) as input sources.</summary>
     <description>
