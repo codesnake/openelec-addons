@@ -1,0 +1,14 @@
+2015-05-29 v1.0.8
+  (add) support for usals in custom config
+  (chg) fix port addressing in diseqc 1.0
+  (updated) language files from Transifex
+
+2015-05-04 v1.0.7
+  (chg) license text changes and fixes
+
+2015-05-01 v1.0.6
+  (add) buildscripts, license files and git config
+  (chg) dont open diseqc config on mainmenu cancel
+
+2015-04-29 v1.0.5
+  (add) - initial public version
