@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="repository.unofficial.addon.pro"
+                name="[COLOR FF757677]Open[/COLOR][COLOR FF8ABEE2]ELEC[/COLOR] Add-ons (unofficial)"
+                version="7.0.0"
+                provider-name="OpenELEC Community">
+        <extension point="xbmc.addon.repository"
+                name="OpenELEC Add-ons (unofficial)">
+                <dir minversion="16.0.0">
+                    <info>https://raw.github.com/codesnake/openelec-unofficial-addons/7.0/WeTek_Play_Plus/arm64/addons.xml</info>
+                    <checksum>https://raw.github.com/codesnake/openelec-unofficial-addons/7.0/WeTek_Play_Plus/arm64/addons.xml.md5</checksum>
+                    <datadir zip="true">https://raw.github.com/codesnake/openelec-unofficial-addons/7.0/WeTek_Play_Plus/arm64</datadir>
+                </dir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary>OpenELEC Add-ons (unofficial)</summary>
+                <description>The OpenELEC unofficial repository contains community provided add-ons. These add-ons are not supported by OpenELEC staff. Please check the OpenELEC or Kodi forums for community support threads and ask the add-on author to submit fixes via GitHub.</description>
+                <disclaimer>Add-ons in this repository are not maintained or supported by OpenELEC staff.</disclaimer>
+                <platform>all</platform>
+        </extension>
+</addon>
+<addon
+  id="pvr.hts"
+  version="2.2.10"
+  name="Tvheadend HTSP Client"
+  provider-name="Adam Sutton, Sam Stenvall, Lars Op den Kamp, Kai Sommerfeld">
+  <requires>
+    <c-pluff version="0.1"/>
+    <import addon="xbmc.pvr" version="4.1.0"/>
+    <import addon="xbmc.codec" version="1.0.1"/>
+  </requires>
+  <extension
+    point="xbmc.pvrclient"
+    library_linux="pvr.hts.so"
+    avahi_type="_htsp._tcp."
+    avahi_ip_setting="host"
+    avahi_port_setting="htsp_port"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="af_ZA">Kodi se voorprogram vir Tvheadend</summary>
+    <summary lang="be_BY">Kodi's frontend for Tvheadend</summary>
+    <summary lang="bg_BG">Kodi клиент за Tvheadend</summary>
+    <summary lang="ca_ES">Frontal del Kodi pel Tvheadend</summary>
+    <summary lang="cs_CZ">Rozhraní Kodi pro Tvheadend</summary>
+    <summary lang="cy_GB">Blaen Kodi ar gyfer Tvheadend</summary>
+    <summary lang="da_DK">Kodis brugerflade til Tvheadend</summary>
+    <summary lang="de_DE">Kodi-PVR-Client für Tvheadend</summary>
+    <summary lang="el_GR">Το frontend του Kodi για το Tvheadend</summary>
+    <summary lang="en_AU">Kodi's frontend for Tvheadend</summary>
+    <summary lang="en_GB">Kodi's frontend for Tvheadend</summary>
+    <summary lang="en_NZ">Kodi's frontend for Tvheadend</summary>
+    <summary lang="en_US">Kodi's frontend for Tvheadend</summary>
+    <summary lang="es_AR">Interfaz Kodi para Tvheadend</summary>
+    <summary lang="es_ES">Interfaz Kodi para Tvheadend</summary>
+    <summary lang="et_EE">Kodi esi Tvheadend'ile</summary>
+    <summary lang="fi_FI">Kodi:n Tvheadend-tuki</summary>
+    <summary lang="fr_CA">Frontal Kodi pour Tvheadend</summary>
+    <summary lang="fr_FR">Interface logicielle pour Tvheadend</summary>
+    <summary lang="gl_ES">Interface do Kodi para Tvheadend</summary>
+    <summary lang="he_IL">לקוח טלוויזיה חיה עבור Tvheadend</summary>
+    <summary lang="hr_HR">Kodi sučelje za Tvheadend</summary>
+    <summary lang="hu_HU">Kodi TVHeadend előtér-kiszolgáló</summary>
+    <summary lang="id_ID">Frontend Kodi untuk Tvheadend</summary>
+    <summary lang="is_IS">Kodi framendi fyrir Tvheadend</summary>
+    <summary lang="it_IT">Frontend di Kodi per Tvheadend</summary>
+    <summary lang="ja_JP">TVheadend 用 Kodi フロントエンド</summary>
+    <summary lang="ko_KR">Tvheadend 을 위한 Kodi 프론트엔드</summary>
+    <summary lang="lt_LT">Kodi naudotojo sąsaja skirta Tvheadend</summary>
+    <summary lang="lv_LV">Kodi galasistēma Tvheadend</summary>
+    <summary lang="mk_MK">Kodi's frontend for Tvheadend</summary>
+    <summary lang="mn_MN">Tvheadend зориулагдсан Kodi-ийн нүүр</summary>
+    <summary lang="ms_MY">Bahagian hadapan Kodi untuk </summary>
+    <summary lang="mt_MT">Faċċata ta' Kodi għat- TVheadend</summary>
+    <summary lang="nb_NO">Kodi sitt frontend for Tvheadend</summary>
+    <summary lang="nl_NL">Kodi's frontend voor Tvheadend</summary>
+    <summary lang="pl_PL">Klient telewizyjny dla Tvheadend</summary>
+    <summary lang="pt_BR">Frontend Kodi para Tvheadend</summary>
+    <summary lang="pt_PT">Frontend Kodi para Tvheadend</summary>
+    <summary lang="ro_RO">Interfața Kodi pentru Tvheadend</summary>
+    <summary lang="ru_RU">Интерфейс Kodi для Tvheadend</summary>
+    <summary lang="sk_SK">Kodi rozhranie pre Tvheadend</summary>
+    <summary lang="sl_SI">Kodijev vmesnik za Tvheadend</summary>
+    <summary lang="sq_AL">Frontend i Kodi'së për Tvheadend</summary>
+    <summary lang="sr_RS">Kodi-јев интерфејс за Tvheadend</summary>
+    <summary lang="sr_RS@latin">Kodijev interfejs za Tvheadend</summary>
+    <summary lang="sv_SE">Kodi's frontend för Tvheadend</summary>
+    <summary lang="szl">Frontend do Tvheadend ôd Kodi</summary>
+    <summary lang="te_IN">Tvheadend కోసం కోడి యొక్క ఫ్రంటెండ్</summary>
+    <summary lang="tg_TJ">Интерфейси Kodi барои Tvheadend</summary>
+    <summary lang="tr_TR">Tvheadend için Kodi ön ucu</summary>
+    <summary lang="uk_UA">Інтерфейс Kodi для Tvheadend</summary>
+    <summary lang="vi_VN">Giao tiếp Kodi cho Tvheadend</summary>
+    <summary lang="zh_CN">Kodi 的 Tvheadend 前端</summary>
+    <summary lang="zh_TW">Kodi的前端Tvheadend</summary>
+    <description lang="af_ZA">Tvheadend voorprogram; ondersteun stroom van Lewendige TV &amp; Opnames, EPG, Tydhouers</description>
+    <description lang="be_BY">Tvheadend frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers</description>
+    <description lang="bg_BG">Tvheadend клиент. Поддържа поточна телевизия, записване, електронен програмен справочник и броячи.</description>
+    <description lang="ca_ES">Interfície per al Tvheadend; compatible amb la transmissió de TV en viu i enregistraments, EPG, temporitzadors</description>
+    <description lang="cs_CZ">Rozhraní Tvheadend. Podporuje proudové vysílání živého vysílání a nahrávek, poslech kanálů rádia, EPG, a časovače.</description>
+    <description lang="cy_GB">Blaen Tvheadend: cefnogi ffrydio Teledu Byw a Recordio, Amserlenni, Amseryddion</description>
+    <description lang="da_DK">Tvheadend-brugerflade; understøtter streaming af direkte tv og optagelser, EPG og timere</description>
+    <description lang="de_DE">PVR-Client für Tvheadend. Unterstützt TV &amp; Aufnahmen, TV-Guide (EPG) und Timer.</description>
+    <description lang="el_GR">Frontend για το Tvheadend. Υποστηρίζει ροές Live TV &amp; Εγγραφές, EPG, Χρονοδιακόπτες</description>
+    <description lang="en_AU">Tvheadend frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers</description>
+    <description lang="en_GB">Tvheadend frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers</description>
+    <description lang="en_NZ">Tvheadend frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers</description>
+    <description lang="en_US">Tvheadend frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers</description>
+    <description lang="es_AR">Interfaz Tvheadend; soporta la reproducción de TV en vivo, grabación, guía de programación, temporizadores</description>
+    <description lang="es_ES">Interfaz Tvheadend; soporta la reproducción de TV en vivo, grabación, guía de programación, temporizadores</description>
+    <description lang="et_EE">Tvheadend esi. Toetab telekanalite striimimist ja salvestamist ning elektroonilist saatekava.</description>
+    <description lang="fi_FI">Tvheadend; tukee reaaliaikaisen television ja nauhoituksien streamausta, EPGtä ja nauhoituksien ajastusta.</description>
+    <description lang="fr_CA">Frontal pour Tvheadend, prenant en charge la lecture en transit des télés en direct &amp; les enregistrements, le GÉP et minuteries.</description>
+    <description lang="fr_FR">Interface logicielle pour Tvheadend gérant la lecture en continu du direct télévision et des enregistrements, le guide électronique des programmes TV et les programmations.</description>
+    <description lang="gl_ES">Interface Tvheadend; soporta a transmisión de TV en directo e Gravacións, Guía, temporizadores</description>
+    <description lang="he_IL">לקוח טלוויזיה חיה של Tvheadend. תומך בהזרמת שידורים חיים והקלטות, האזנה לרדיו, הצגת לוח שידורים ותזמון הקלטות.</description>
+    <description lang="hr_HR">Tvheadend pozadinski softver podržava gledanje i snimanje TV programa, elektronski programski vodič (EPG) i zakazano snimanje.</description>
+    <description lang="hu_HU">TVHeadend előtér-kiszolgáló. Élő adások és felvételek sugárzásának támogatása EPG-vel és időzítéssel</description>
+    <description lang="id_ID">Frontend Tvheadend; mendukung menangkap siaran TV Live &amp; Rekaman, EPG, Timer</description>
+    <description lang="is_IS">Tvheadend framendi; styður streymingu á beinum sjónvarpi og upptökum, rafrænum sjónvarpsvísum (EGP), tímatökur</description>
+    <description lang="it_IT">Frontend di Tvheadend; supporta lo streaming di Live TV &amp; Registrazione, EPG, Timers</description>
+    <description lang="ja_JP">TVheadend フロントエンドです。ライブTVストリーミング、録画、EPG、タイマーをサポートしています。</description>
+    <description lang="ko_KR">Tvheadend 프론트엔드; TV 시청 &amp; 녹화, EPG, 타이머 지원</description>
+    <description lang="lt_LT">Tvheadend naudotojo sąsaja; palaiko televizijos transliacijas ir įrašus, EPG, laikmačius</description>
+    <description lang="lv_LV">Tvheadend galasistēma; atbalsta tieštaides TV un ierakstu straumēšanu, EPG, taimerus</description>
+    <description lang="mk_MK">Tvheadend frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers</description>
+    <description lang="mn_MN">Tvheadend нүүр; Live TV &amp; бичлэг дамжуулалт, EPG, Timer</description>
+    <description lang="ms_MY">Bahagian hadapan Tvheadend; menyokong penstriman  Langsung &amp; Rakaman, EPG, Pemasa TV</description>
+    <description lang="mt_MT">Faċċata ta' TVheadend; jiflaħ għal streaming ta' TV Lajv u rekordings, EPG, Arloġġi</description>
+    <description lang="nb_NO">Tvheadend frontend; støtte for visning av direkte TV og opptakk, EPG, tidstakere</description>
+    <description lang="nl_NL">Tvheadend frontend; ondersteuning van streaming, Live TV &amp; opnames, EPG, Timers</description>
+    <description lang="pl_PL">Klient telewizyjny dla Tvheadend obsługuje strumieniowanie kanałów radiowych i telewizyjnych, nagrywanie i harmonogram nagrań oraz funkcje przewodnika telewizyjnego.</description>
+    <description lang="pt_BR">Tvheadend; suporta streaming de TV Ao Vivo e Gravada, EPG, Agendamentos</description>
+    <description lang="pt_PT">Frontend Tvheadend; suporta transmissão de TV em directo e gravações, EPG, temporizadores</description>
+    <description lang="ro_RO">Partea din față pentru Tvheadend; suportă difuzarea în flux a televiziunii în direct și a înregistrăriilor, EPG, Cronometre</description>
+    <description lang="ru_RU">Интерфейс для Tvheadend. Поддерживает просмотр и запись ТВ, EPG и таймеры</description>
+    <description lang="sk_SK">Rozhranie pre Tvheadend; je podporované streamovanie živého televízneho vysielania a nahrávok, EPG, časovačov</description>
+    <description lang="sl_SI">Vmesnik za Tvheadend; podpira pretakanje televizije v živo &amp; posnetkov, EPG, časovnike</description>
+    <description lang="sq_AL">Tvheadend frotnend përkrahën transmetimin e Live TV'së, EPG'së dhe "timer'ë"</description>
+    <description lang="sr_RS">Tvheadend интерфејс; подржава стримовање ТВ Уживо &amp; Снимака, EPG, Тајмере</description>
+    <description lang="sr_RS@latin">Tvheadend interfejs; podržava strimovanje TV Uživo &amp; Snimaka, EPG, Tajmere</description>
+    <description lang="sv_SE">Tvheadend frontend; stödjer strömning av direktsänd TV &amp; inspelningar, EPG, Timers</description>
+    <description lang="szl">Frontend Tvheadend; podpiyrŏ strumiyniowaniy TV, nagrań, EPG i minutnikōw</description>
+    <description lang="te_IN">Tvheadend ఫ్రంటెండ్; Live TV &amp; రికార్డింగ్స్, EPG, టైమర్లు , స్ట్రీమింగ్ మద్దతు కలదు</description>
+    <description lang="tg_TJ">Интерфейси Tvheadend; дастгирии ҷараёни Сабтҳо, Вақтсанҷҳо, Live TV ва EPG</description>
+    <description lang="tr_TR">Tvheadend ön ucu; Canlı TV akışı ve kayıt yapabilme, EPG ve zamanlayıcıları destekler</description>
+    <description lang="uk_UA">Інтерфейс для Tvheadend; підтримує передачу і запис потокового телебачення, EPG (телегід) і таймери.</description>
+    <description lang="vi_VN">Giao tiếp cho Tvheadend; hỗ trợ truyền phát và thu chương trình Live TV, hẹn giờ, và hiển thị lịch chiếu (EPG)</description>
+    <description lang="zh_CN">Tvheadend 前端，支持直播电视和录像流媒体、电子节目单、定时器</description>
+    <description lang="zh_TW">Tvheadend前端，支援的串流媒體包含有直播電視和錄製節目，電子節目表，定時器 等</description>
+    <disclaimer lang="af_ZA">Hierdie is onstabiele sagteware! Die outeurs is op geen manier verantwoordelik vir gefaalde opnames, inkorrekte tydhouers, vermorsde ure, of enige ander ongewensde effekte...</disclaimer>
+    <disclaimer lang="be_BY">This is unstable software! The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
+    <disclaimer lang="bg_BG">Тази програма е нестабилна! Авторите не носят отговорност за неуспешно записване, некоректни броячи, пропиляното време и други нежелани ефекти.</disclaimer>
+    <disclaimer lang="ca_ES">Això és programari inestable! Els autors no són de cap manera responsables dels enregistraments que han fallat, temporitzadors incorrectes, hores perdudes, o qualssevol altres efectes no desitjats..</disclaimer>
+    <disclaimer lang="cs_CZ">Tento software není stabilní. Autoři nejsou žádným způsobem zodpovědní za selhání při nahrávání, neplatné časovače, ztracený čas, či jakékoliv jiné nežádoucí události...</disclaimer>
+    <disclaimer lang="cy_GB">Mae hwn yn feddalwedd ansad! Nid yw'r awduron yn gyfrifol mewn unrhyw ffordd am fethu recordio, amseru gwallus, oriau wedi eu gwastraffu nac effeithiau anymunol eraill.</disclaimer>
+    <disclaimer lang="da_DK">Dette er ustabil software! Ophavsmændene er på ingen måde ansvarlige for mislykkede optagelser, ukorrekte timere, spildte timer, eller andre uønskede konsekvenser.</disclaimer>
+    <disclaimer lang="de_DE">Dies ist instabile Software! Die Autoren sind in keiner Weise verantwortlich für fehlgeschlagene Aufnahmen, falsche Timer, verschwendete Zeit oder andere ungewünschte Effekte.</disclaimer>
+    <disclaimer lang="el_GR">Ασταθές πρόγραμμα! Οι δημιουργοί δεν είναι σε καμία περίπτωση υπεύθυνοι για αποτυχημένες εγγραφές, λανθασμένους χρονοδιακόπτες, χαμένες ώρες, ή κάθε είδους ανεπιθύμητα αποτελέσματα..</disclaimer>
+    <disclaimer lang="en_AU">This is unstable software! The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
+    <disclaimer lang="en_GB">This is unstable software! The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
+    <disclaimer lang="en_NZ">This is unstable software! The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
+    <disclaimer lang="en_US">This is unstable software! The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
+    <disclaimer lang="es_AR">¡Este software es inestable! Los autores no se responsabilizan por grabaciones fallidas, temporizadores incorrectos, horas perdidas, o cualquier otro efecto no deseado..</disclaimer>
+    <disclaimer lang="es_ES">¡Este software es inestable! Los autores no se responsabilizan de grabaciones fallidas, temporizadores incorrectos, horas perdidas, o cualquier otro efecto no deseado...</disclaimer>
+    <disclaimer lang="es_MX">¡Esto es software inestable! Los autores no son de ninguna manera responsables por grabaciones fallidas, temporizadores incorrectos, horas perdidas o cualquier otro efecto no deseado...</disclaimer>
+    <disclaimer lang="et_EE">See on ebastabiilne tarkvara! Autorid ei ole kuidagi moodi vastutavad nurjunud salvestiste, ebaõige aegrelee, raisatud tundide ega muude soovimatute asjade eest.</disclaimer>
+    <disclaimer lang="fi_FI">Tämä on epävakaa ohjelma! Ohjelman kirjoittavat eivät vastaa millään tavalla epäonnistuneista nauhoituksista, ajastimen väärästä toiminnasta, hukatusta ajasta tai muista ei-halutuista tapahtumista.</disclaimer>
+    <disclaimer lang="fr_CA">Ce logiciel est instable! Les auteurs ne sont aucunement responsables des enregistrements défaillants, des minuteries erronées, des heures perdues ou tout autre effet indésirable.</disclaimer>
+    <disclaimer lang="fr_FR">Logiciel en cours d'élaboration ! Les auteurs ne sont en aucun cas responsables de l'échec des enregistrements, programmations défectueuses, temps perdu ou autres effets indésirables.</disclaimer>
+    <disclaimer lang="gl_ES">Este é software non estable, os autores non se fan responsábeis dos erros na gravacións, temporizadores incorrectos, e outros efectos non desexados.</disclaimer>
+    <disclaimer lang="he_IL">זוהי איננה הרחבה יציבה! המפתחים אינם אחראים על כשלון בניגון, זמנים שגויים במדריך השידורים, שעות מבוזבזות או כל תופעה לא רצויה אחרת.</disclaimer>
+    <disclaimer lang="hr_HR">Ovo je nestabilan softver! Autori nisu ni na koji način odgovorni za neuspjelo snimanje, netočna vremena snimanja, izgubljene sate, ili bilo koje druge nepoželjne učinke.</disclaimer>
+    <disclaimer lang="hu_HU">Ez nem stabil szoftver! A készítők nem vállalnak felelősséget, a hibás felvételért, rossz időzítésért, elvesztegetett időért...</disclaimer>
+    <disclaimer lang="hy_AM">Սա անկայուն ծրագրային ապահովում է: Հեղինակները պատասխանատու չեն վատ ձայնագրումների, սխալ ժամանակացույցերի, կորած ժամանակի կամ այլ ոչ ցանկալի երևույթների համար:</disclaimer>
+    <disclaimer lang="id_ID">Ini merupakan software yang tidak stabil! Penulis tidak bertanggung jawab untuk rekaman gagal, timer salah, waktu terbuang, atau efek tak diinginkan lainnya...</disclaimer>
+    <disclaimer lang="is_IS">Þetta er óstöðugur hugbúnaður! Höfundarnir eru á engann hátt ábyrgir fyrir misheppnuðum upptökum, röngum upptökutímum, klukkustundum sem að fóru í súginn eða nokkrum öðrum óæskilegum áhrifum.</disclaimer>
+    <disclaimer lang="it_IT">Questo software è instabile! Gli autori non sono in alcun modo responsabili per registrazioni fallite, timers incorretti, ore perse, o qualsiasi altro effetto indesiderato.</disclaimer>
+    <disclaimer lang="ja_JP">これは不安定なソフトウェアです！本プログラムの作者は、録画の失敗、正確に作動しなかったタイマー、無駄にした時間、その他あらゆる好ましくない結果について責任を負わないものとします。</disclaimer>
+    <disclaimer lang="ko_KR">이 소프트웨어는 불안정합니다! 제작자는 녹화 실패, 부정확한 타이머, 시간 낭비 및 기타 예상하지 못한 결과에 대해 책임지지 않습니다..</disclaimer>
+    <disclaimer lang="lt_LT">Tai yra nestabili programinė įranga! Autorius jokiu būdu nėra neatsakingas už nepavykusius įrašus, neteisingus laikmačius, iššvaistytas valandas, ar nutikus kitiems nepageidaujamiems poveikiams ...[COLOR=red](Kodi.lt siūlo/rekomenduoja testuojant šį priedą persijungti į Anglų [orinali] kalbą)[/COLOR]</disclaimer>
+    <disclaimer lang="lv_LV">Šī ir nestabila programmatūra! Autori nav atbildīgi par nesanākušiem ierakstiem, nepareiziem taimeriem, iztērētām stundām vai jebkādiem citiem nevēlamiem efektiem..</disclaimer>
+    <disclaimer lang="mk_MK">This is unstable software! The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects.</disclaimer>
+    <disclaimer lang="mn_MN">Тус програм нь гүйцэд хийгдэж дуусаагүй! Зохиогч нь алдаатай бичлэг, цагийн буруу хөтлөлт, алдагдсан цаг хугацаа эсвэл бусад ямар нэгэн хүсээгүй үр дүнд хариуцлага хүлээхгүй.</disclaimer>
+    <disclaimer lang="ms_MY">Ini merupakan perisian tidak stabil! Pengarang tidak bertanggungjawab atas kegagalan rakaman, pemasa tidak betul, masa yang dibazirkan, atau apa jua kesan yang tidak dikehendaki..</disclaimer>
+    <disclaimer lang="mt_MT">Dan il-programm mhuwiex stabbli! L-Awturi m'humiex responsabbli bl-ebda mod għal rekordings li ma jirnexxewx, arloġġi żbaljati, siegħat moħlija, jew kwalunkwe effett ieħor mhux mixtieq.</disclaimer>
+    <disclaimer lang="nb_NO">Dette er ustabilt programvare! Forfatterne er ikke ansvarlig på noen måte for ødelagte opptak, feile timere, bortkastede timer, eller andre uønskede hendinger...</disclaimer>
+    <disclaimer lang="nl_NL">Dit is instabiele software! De auteurs zijn op geen enkele wijze verantwoordelijk voor de mislukte opnames, onjuiste timers, verspilde uren, of een andere ongewenste effecten.</disclaimer>
+    <disclaimer lang="pl_PL">Oprogramowanie nadal jest w fazie rozwoju i jest niestabilne! Autorzy w żaden sposób nie są odpowiedzialni za nieudane nagrania, błędy w harmonogramie nagrań, zmarnowany czas ani jakiekolwiek inne niepożądane efekty.</disclaimer>
+    <disclaimer lang="pt_BR">Este é um software instável! Os autores não são responsáveis por falhas nas gravações, agendamentos incorretos, horas desperdiçadas, ou quaisquer outros efeitos indesejáveis...</disclaimer>
+    <disclaimer lang="pt_PT">Este software é instável! Os autores não são de forma alguma responsáveis por gravações falhadas, temporizadores incorrectos, horas desperdiçadas, ou qualquer outro tipo de efeitos indesejáveis..</disclaimer>
+    <disclaimer lang="ro_RO">Acest software nu este stabil! Autorii nu sunt în niciun caz responsabili pentru înregistrările eșuate, cronometre incorecte, ore pierdute sau orice alt efect nedorit.</disclaimer>
+    <disclaimer lang="ru_RU">Это нестабильная программа! Авторы не несут ответственности за неудачную запись, неправильные таймеры, потраченное время и другие нежелательные последствия.</disclaimer>
+    <disclaimer lang="si_LK">මෙය අස්ථිර මෘදුකාංගයකි! මෙහි සිදුවන පටිගත කිරීම් අසාර්ථක වීම්, සාවද්‍ය මුහුර්තක, නාස්ති වූ කාලයන්, හෝ වෙනත් යමිකිසි නුසුදුසු බලපෑම් සඳහා කතෘ වග කියනු නොලැබේ.</disclaimer>
+    <disclaimer lang="sk_SK">Tento softvér nie je stabilný! Autori nenesú žiadnu zodpovednosť za chybné nahrávky vysielania, nesprávne časovače alebo iné neželané udalosti spôsobené týmto softvérom..</disclaimer>
+    <disclaimer lang="sl_SI">To je nestabilna programska oprema! Avtorji niso odgovorni za neuspela snemanja, nepravilne časovnike, zapravljen čas in katerikoli drug neželen učinek...</disclaimer>
+    <disclaimer lang="sq_AL">Ky program nuk është ende stabil! Autorët e këtij programi nuk janë në as një menyr përgjegjës për rregistrime të gabuara, timer të pasaktë, kohë të humbur ose efekte të tilla të padëshirueshme.</disclaimer>
+    <disclaimer lang="sr_RS">Овај софтвер је нестабилан! Аутори ни на који начин нису одговорни за неуспела снимања, неисправне тајмере, изгубљене сате, или било које друге нежељене ефекте...</disclaimer>
+    <disclaimer lang="sr_RS@latin">Ovaj softver je nestabilan! Autori ni na koji način nisu odgovorni za neuspela snimanja, neispravne tajmere, izgubljene sate, ili bilo koje druge neželjene efekte...</disclaimer>
+    <disclaimer lang="sv_SE">Detta är ostabil programvara! Upphovsmännen är inte ansvariga för felaktiga inspelningar, inkorrekta timers, slösad tid eller andra oönskade effekter..</disclaimer>
+    <disclaimer lang="szl">To je niystabilny softwer! Autōry niy sōm ôdpedzialne za niypodarzōne graniy, niynŏleżne godziny EPG, stracōne godziny i inksze niychciane efekty.</disclaimer>
+    <disclaimer lang="te_IN">ఇది అస్థిర సాఫ్ట్వేర్! విఫలమైన రికార్డింగ్లు, తప్పు టైమర్లు, వృధా గంటల, లేదా ఏ ఇతర అవాంఛనీయ ప్రభావాలకు ఏ విధంగా రచయితలు భాద్యుతులు కారు.</disclaimer>
+    <disclaimer lang="tg_TJ">Ин нармафзори ноустувор аст! Муаллифон барои вайрониҳои сабт, вақтсанҷҳои нодуруст, соатҳои бефоида ва дигар таъсирҳои номатлуб ҷавобгар намебошанд.</disclaimer>
+    <disclaimer lang="tr_TR">Bu kararsız bir yazılımdır! Yapımcılar hatalı kayıtlardan, bozuk sürelerden, harcanan vakitten veya herhangi bir olumsuz etkiden dolayı sorumlu tutulamaz.</disclaimer>
+    <disclaimer lang="uk_UA">Це нестабільна програма! Автори не несуть відповідальності за зіпсовані записи, неправильні таймери, втрачений час та інші небажані ефекти.</disclaimer>
+    <disclaimer lang="vi_VN">Đây là phần mềm không ổn định! Các tác giả không chịu trách nhiệm đối với bản ghi âm thất bại, giờ không chính xác, giờ lãng phí, hoặc bất kỳ tác dụng không mong muốn khác..</disclaimer>
+    <disclaimer lang="zh_CN">这是不稳定版的软件！作者不对录像失败、错误定时造成时间浪费或其它不良影响负责。</disclaimer>
+    <disclaimer lang="zh_TW">這是測試版軟體！其原創作者並無法對於以下情況負責，包含：錄影失敗，不正確的定時設定，多餘時數，或任何產生的其它不良影響...</disclaimer>
+    <platform>linux</platform>
+  </extension>
+</addon>
+<addon
+  id="pvr.vdr.vnsi"
+  version="1.11.11"
+  name="VDR VNSI Client"
+  provider-name="FernetMenta, Team Kodi">
+  <requires>
+    <c-pluff version="0.1"/>
+    <import addon="xbmc.pvr" version="4.1.0"/>
+    <import addon="xbmc.codec" version="1.0.1"/>
+    <import addon="kodi.guilib" version="5.10.0"/>
+  </requires>
+  <extension
+    point="xbmc.pvrclient"
+    library_linux="pvr.vdr.vnsi.so"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="af_ZA">PVR kliënt om VDR te konnekteer aan Kodi oor die VNSI koppelvlak</summary>
+    <summary lang="be_BY">PVR client to connect VDR to Kodi over the VNSI interface</summary>
+    <summary lang="bg_BG">ПВР клиент за свързване на VDR към Kodi чрез VNSI интерфейс</summary>
+    <summary lang="ca_ES">Client PVR per connectar VDR a Kodi sobre la interfície VNSI</summary>
+    <summary lang="cs_CZ">Klient PVR pro spojení VDR do Kodi skrze rozhraní VNSI</summary>
+    <summary lang="cy_GB">Rhaglen Recordydd i gysylltu VDR â Kodi dros rhyngwyneb VNSI</summary>
+    <summary lang="da_DK">PVR klient som forbinder VDR til Kodi over VNSI grænsefladen</summary>
+    <summary lang="de_DE">PVR-Client, der einen VDR über das VNSI-Interface mit Kodi verbindet.</summary>
+    <summary lang="el_GR">Πελάτης PVR για σύνδεση του VDR στο Kodi διαμέσου του VNSI</summary>
+    <summary lang="en_AU">PVR client to connect VDR to Kodi over the VNSI interface</summary>
+    <summary lang="en_GB">PVR client to connect VDR to Kodi over the VNSI interface</summary>
+    <summary lang="en_NZ">PVR client to connect VDR to Kodi over the VNSI interface</summary>
+    <summary lang="en_US">PVR client to connect VDR to Kodi over the VNSI interface</summary>
+    <summary lang="es_AR">Cliente PVR para conectar VDR a Kodi sobre la interfaz VNSI</summary>
+    <summary lang="es_ES">Cliente PVR para conectar VDR a Kodi sobre la interfaz VNSI</summary>
+    <summary lang="fi_FI">PVR-asiakas, joka kytkee VDR:n Kodi:iin VNSI:n avulla</summary>
+    <summary lang="fr_CA">Client numériscope pour connecter VDR à Kodi par une interface VNSI.</summary>
+    <summary lang="fr_FR">Client enregistreur vidéo (PVR) connectant un enregistreur de disque vidéo à Kodi via l'interface d'enregistrement de flux réseau vidéo</summary>
+    <summary lang="gl_ES">Cliente PVR que conecta VDR ao Kodi mediante a interface VNSI</summary>
+    <summary lang="he_IL">לקוח טלוויזיה חיה עבור VDR בממשק VNSI</summary>
+    <summary lang="hr_HR">PVR klijent za povezivanje VDR na Kodi putem VNSI sučelja</summary>
+    <summary lang="hu_HU">PVR ügyfél a VDR és az Kodi VNSI interfészen keresztüli csatlakoztatásához </summary>
+    <summary lang="id_ID">Klien PVR untuk mengkoneksikan VDR dengan Kodi melalui antarmuka VNSI</summary>
+    <summary lang="is_IS">Upptökuþjónn til að tengja VDR við Kodi í gegnum VNSI viðmót</summary>
+    <summary lang="it_IT">Cliente PVR per connettere VDR a Kodi attraverso l'interfaccia VNSI</summary>
+    <summary lang="ja_JP">VNSIインタフェースでVDRをKodiに接続するためのPVRクライアント</summary>
+    <summary lang="ko_KR">PVR client to connect VDR to Kodi over the VNSI interface</summary>
+    <summary lang="lt_LT">PVR klientas, skirtas prijungti VDR prie Kodi per VNSI sąsają</summary>
+    <summary lang="lv_LV">PVR klients, lai pieslēgtu VDR pie Kodi, izmantojot VNSI saskarni</summary>
+    <summary lang="mk_MK">PVR клиент за поврзување со Kodi преку VNSI интерфејс</summary>
+    <summary lang="ms_MY">Klien PVR untuk sambungkan VDR ke Kodi menerusi antaramuka VNSI</summary>
+    <summary lang="nb_NO">PVR-klient for å koble VDR til Kodi over VNSI-grensesnittet</summary>
+    <summary lang="nl_NL">PVR client om VDR te verbinden met Kodi op de VNSI-interface</summary>
+    <summary lang="pl_PL">Klient telewizyjny dla VDR wykorzystujący interfejs VNSI</summary>
+    <summary lang="pt_BR">Cliente PVR para conectar VDR ao Kodi sobre interface VNSI</summary>
+    <summary lang="pt_PT">Cliente PVR para ligar VDR ao Kodi através da interface VNSI</summary>
+    <summary lang="ro_RO">Client PVR pentru conectare VDR la Kodi folosind interfaţa VNSI</summary>
+    <summary lang="ru_RU">PVR клиент для подключения VDR к Kodi через интерфейс VNSI</summary>
+    <summary lang="sk_SK">PVR klientská aplikácia na pripojenie VDR servera do Kodi prostredníctvom rozhrania VNSI</summary>
+    <summary lang="sl_SI">Odjemalec PVR za povezavo VDR in Kodija preko vmesnika VNSI</summary>
+    <summary lang="sq_AL">Klient PVR për lidhjen e VDR dhe Kodi mbi ndërfaqjen VNSI</summary>
+    <summary lang="sr_RS@latin">PVR klijent za povezivanje VDR sa Kodijem preko VNSI interfejsa</summary>
+    <summary lang="sv_SE">PVR-klient för att ansluta VDR till Kodi över VNSI-gränsnittet</summary>
+    <summary lang="tr_TR">Kayıt Sunucusu VDR'ye Kodi'yle VNSI Arayüzü Üzerinden Bağlanır</summary>
+    <summary lang="uk_UA">Клієнт PVR для зв’язку VDR з Kodi через інтерфейс VNSI</summary>
+    <summary lang="vi_VN">Trình PVR để kết nối VDR với Kodi qua giao tiếp VNSI</summary>
+    <summary lang="zh_CN">让 Kodi 通过 VNSI 界面与 VDR 连接的 PVR 客户端</summary>
+    <summary lang="zh_TW">PVR用戶端經由VNSI介面接口連接VDR到Kodi</summary>
+    <description lang="af_ZA">VDR voorprogram; ondersteun stroom van Lewendige TV &amp; Opnames, EPG, Tydhouers oor die VNSI byvoegsel</description>
+    <description lang="be_BY">VDR frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers over the VNSI plugin</description>
+    <description lang="bg_BG">VDR клиент. Поддържа поточна телевизия и записване, електронен програмен справочник, броячи чрез VNSI приставка.</description>
+    <description lang="ca_ES">Frontal VDR; suportant fluxos de TV en directe i enregistraments, EPG, temporitzadors sobre el connector VNSI</description>
+    <description lang="cs_CZ">Rozhraní VDR. Podporuje proudové vysílání živého vysílání a nahrávek, poslech kanálů rádia, EPG, a časovače skrze modul VNSI</description>
+    <description lang="cy_GB">Blaen VDR; cynnal ffrydio Teledu Byw, Recordio, Amserlenni, Amseryddion dros ategyn VNSI</description>
+    <description lang="da_DK">VDR frontend; understøtter streaming af TV og Optagelser, EPG og Timere over VNSI-addon</description>
+    <description lang="de_DE">VDR-Oberfläche: Erlaubt die Wiedergabe von Live-TV und Aufnahmen sowie die Anzeige des EPG, die Kanalsuche und die Programmierung von Timern über das VNSI-Plugin.</description>
+    <description lang="el_GR">Frontend για το VDR. Υποστηρίζει ροές Live TV &amp; Εγγραφές, Χρονοδιακόπτες διαμέσου του plugin VNSI</description>
+    <description lang="en_AU">VDR frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers over the VNSI plugin</description>
+    <description lang="en_GB">VDR frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers over the VNSI plugin</description>
+    <description lang="en_NZ">VDR frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers over the VNSI plugin</description>
+    <description lang="en_US">VDR frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers over the VNSI plugin</description>
+    <description lang="es_AR">Front-end VDR, soporte de streaming de televisión en vivo y grabaciones, GEP, temporizador con el plugin VNSI</description>
+    <description lang="es_ES">Front-end VDR, soporte de streaming de televisión en vivo y grabaciones, EPG, temporizador con el plugin VNSI</description>
+    <description lang="fi_FI">VDR-frontend; tukee livelähetyksiä sekä tallenteita, ohjelmaopasta, ajastuksia ja VNSI-lisäosia</description>
+    <description lang="fr_CA">Frontal VDR, prenant en charge la lecture en transit des télés en direct &amp; les enregistrements, le GÉP et les minuteries avec le plugiciel VNSI.</description>
+    <description lang="fr_FR">Interface logicielle pour enregistreur de disque vidéo (VDR). Il gère la lecture en continu de flux direct télévision et l'enregistrement, le guide électronique des programmes TV et les programmations via les routines d'enregistrement de flux réseau vidéo.</description>
+    <description lang="gl_ES">Interface VDR; soporta a transmisión de TV en directo e gravacións, Guía de programación e temporizadores mediante o engadido de VNSI</description>
+    <description lang="he_IL">לקוח טלוויזיה חיה של VDR. בעזרת התוסף VNSI לשרת VDR הלקוח תומך בהזרמת שידורים חיים והקלטות, האזנה לרדיו, הצגת לוח שידורים ותזמון הקלטות.</description>
+    <description lang="hr_HR">VDR pozadinski softver; podržava streamanje televizije, snimanje, EPG, zakazania snimanja preko VNSI dodatka</description>
+    <description lang="hu_HU">VDR előtér-kiszolgáló. Élő adások és felvételek sugárzásának támogatása EPG-vel és időzítéssel a VNSI kiegészítőn keresztül</description>
+    <description lang="id_ID">Frontend VDR; Mendukung pengaliran Siaran TV langsung dan Rekaman, EPG, Timer melalui plugin VNSI</description>
+    <description lang="is_IS">VDR framendi; styður straum frá Live TV og upptökur, rafræna sjónvarpsvísa (EPG), tímatöku í gegnum VNSI viðbótina</description>
+    <description lang="it_IT">Frontend VDR; supporta lo streaming di Live TV e le registrazioni, EPG e timer sul plugin VNSI</description>
+    <description lang="ja_JP">VDR フロントエンド ： ライブテレビのストリーミングや録画、EPG、VNSIプラグイン上のタイマーをサポートしています。</description>
+    <description lang="ko_KR">VDR 프론트엔드; TV 시청 &amp; 녹화, EPG, VNSI 플러그인을 통한 타이머 지원</description>
+    <description lang="lt_LT">VDR naudotojo sąsaja; palaiko TV transliacijas ir laidų įrašymą, EPG ir laikmačiius per VNSI įskiepį</description>
+    <description lang="lv_LV">VDR galasistēma; atbalsta tiešraides TV un ierakstu straumēšanu, EPG, taimerus no VNSI spraudņa</description>
+    <description lang="mk_MK">VDR интерфејс; подржува стриминг на Live TV и снимки, EPG тајмери преку VNSI додаток</description>
+    <description lang="ms_MY">Bahagian hadapan VDR; menyokong penstirman  TV Langsung &amp; Rakaman, EPG, Pemasa menerusi pemalam VNSI</description>
+    <description lang="nb_NO">VDR frontend; støtte for visning av direkte TV og opptak, EPG og tidtakere over VNSI-tillegget</description>
+    <description lang="nl_NL">VDR frontend: ondersteunt streaming van Live TV &amp; Recordings, EPG, Timers over de VNSI plugin</description>
+    <description lang="pl_PL">Klient telewizyjny dla VDR obsługuje strumieniowanie kanałów radiowych i telewizyjnych, nagrywanie i harmonogram nagrań oraz funkcje przewodnika telewizyjnego przy wykorzystaniu wtyczki VNSI dla VDR</description>
+    <description lang="pt_BR">Frontend VDR; suporta streaming de TV ao vivo e gravações, EPG, agendamentos sobre o plugin VNSI</description>
+    <description lang="pt_PT">Frontend VDR; suporta transmissão de Live TV e Gravações, EPG e Temporizadores através do plugin VNSI</description>
+    <description lang="ro_RO">Frontend VDR; suportă streaming de TV Live &amp; Înregistrări, EPG, Cronometre folosind pluginul VNSI</description>
+    <description lang="ru_RU">VDR фронтэнд; поддерживает потоковое TV, запись, ЕПГ, таймеры через VNSI плагин</description>
+    <description lang="sk_SK">VDR rozhranie; je podporované streamovanie živého televízneho vysielania a nahrávok, EPG, časovačov prostredníctvom modulu VNSI</description>
+    <description lang="sl_SI">Vmesnik za VDR; podpira pretakanje televizije v živo &amp; posnetkov, EPG, časovnike preko vtičnika VNSI</description>
+    <description lang="sq_AL">VDR frontend, që lejon transmetimin e Live TV'së &amp; Regjistrime, EPG, Timer, nëpërmes shtesës VNSI</description>
+    <description lang="sr_RS@latin">VDR interfejs; podržava strimovanje TV Uživo &amp; Snimaka, EPG, Tajmere preko VNSI</description>
+    <description lang="sv_SE">VDR frontend; stödjer strömning av direktsänd TV &amp; inspelningar, EPG, timers över VNSI-tillägget</description>
+    <description lang="tr_TR">VDR ön ucu; Canlı TV akışı ve kayıt yapabilme, EPG, VNSI eklentisi üzerinden zamanlayıcıları destekler.</description>
+    <description lang="uk_UA">Надстройка над VDR; підтримує потік TV і записів,  EPG, таймерів через додаток VNSI</description>
+    <description lang="vi_VN">Giao tiếp cho VDR; hỗ trợ truyền phát và thu chương trình Live TV, hẹn giờ và hiển thị lịch trình chiếu (EPG) thông qua plugin VNSI</description>
+    <description lang="zh_CN">VDR 前端，通过 VNSI 插件支持直播电视和录像流媒体、电子节目单、定时器</description>
+    <description lang="zh_TW">VDR前端，在VNSI外掛插件上支援的串流媒體包括有：電視直播和錄影，電子節目表，定時器。</description>
+    <disclaimer lang="af_ZA">Hierdie is onstabiele sagteware! Die outeurs is op geen manier verantwoordelik vir gefaalde opnames, inkorrekte tydhouers, gemorsde ure, of enige ander ongewensde effekte.</disclaimer>
+    <disclaimer lang="be_BY">This is unstable software! The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
+    <disclaimer lang="bg_BG">Тази програма е нестабилна! Авторите не носят отговорност за неуспешно записване, некоректни броячи, пропиляно време и други нежелани ефекти.</disclaimer>
+    <disclaimer lang="ca_ES">Això és programari inestable! Els autors no són de cap manera responsables dels enregistraments que han fallat, temporitzadors incorrectes, hores perdudes, o qualsevols altres efectes indesitjables..</disclaimer>
+    <disclaimer lang="cs_CZ">Tento software není stabilní. Autoři nejsou žádným způsobem zodpovědní za selhání při nahrávání, neplatné časovače, ztracený čas, či jakékoliv jiné nežádoucí události...</disclaimer>
+    <disclaimer lang="cy_GB">Mae hwn yn feddalwedd ansad! Nid yw'r awduron yn gyfrifol mewn unrhyw ffordd am fethu recordio, amseru gwallus, oriau wedi eu gwastraffu nac effeithiau anymunol eraill.</disclaimer>
+    <disclaimer lang="da_DK">Dette er ustabil software! Ophavsmændene er på ingen måde ansvarlige for mislykkede optagelser, ukorrekte timere, spildte timer, eller andre uønskede konsekvenser..</disclaimer>
+    <disclaimer lang="de_DE">Diese Software ist noch in der Entwicklung! Die Autoren sind nicht für fehlgeschlagene Aufnahmen, falsche Timer, verschwendete Zeit oder andere ungewollte Effekte verantwortlich.</disclaimer>
+    <disclaimer lang="el_GR">Ασταθές πρόγραμμα! Οι δημιουργοί δεν είναι σε καμία περίπτωση υπεύθυνοι για αποτυχημένες εγγραφές, λανθασμένους χρονοδιακόπτες, χαμένες ώρες, ή κάθε είδους ανεπιθύμητα αποτελέσματα..</disclaimer>
+    <disclaimer lang="en_AU">This is unstable software! The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
+    <disclaimer lang="en_GB">This is unstable software! The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
+    <disclaimer lang="en_NZ">This is unstable software! The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
+    <disclaimer lang="en_US">This is unstable software! The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
+    <disclaimer lang="es_AR">¡Este software es inestable! Los autores no se responsabilizan por grabaciones fallidas, temporizadores incorrectos, horas perdidas, o cualquier otro efecto no deseado..</disclaimer>
+    <disclaimer lang="es_ES">¡Este software es aún inestable! Los autores no son responsables en forma alguna por grabaciones fallidas, temporizaciones incorrectas, tiempo perdido o ningún otro efecto no deseado.</disclaimer>
+    <disclaimer lang="es_MX">¡Esto es software inestable! Los autores no son de ninguna manera responsables por grabaciones fallidas, temporizadores incorrectos, horas perdidas o cualquier otro efecto no deseado...</disclaimer>
+    <disclaimer lang="et_EE">See on ebastabiilne tarkvara! Autorid ei ole kuidagi moodi vastutavad nurjunud salvestiste, ebaõige aegrelee, raisatud tundide ega muude soovimatute asjade eest.</disclaimer>
+    <disclaimer lang="fi_FI">Tämä on epävakaa ohjelmisto! Ohjelmiston tekijät eivät ole millään muotoa vastuussa epäonnistuneista tallennuksista, virheellisistä ajastuksista, haaskatusta ajasta, verenpaineen noususta eikä mistään muusta epäsuotuisasta vaikutuksesta.</disclaimer>
+    <disclaimer lang="fr_CA">Ce logiciel est instable! Les auteurs ne sont aucunement responsables des enregistrements défaillants, des minuteries erronées, des heures perdues ou tout autre effet indésirable.</disclaimer>
+    <disclaimer lang="fr_FR">Logiciel en cours d'élaboration ! Les auteurs ne sont en aucun cas responsables de l'échec des enregistrements, programmations défectueuses, temps perdu ou autres effets indésirables.</disclaimer>
+    <disclaimer lang="gl_ES">Software non estable, os autores non se fan responsábeis dos erros na gravacións, temporizadores incorrectos, e outros efectos non desexados.</disclaimer>
+    <disclaimer lang="he_IL">זוהי איננה הרחבה יציבה! המפתחים אינם אחראים על כשלון בניגון, זמנים שגויים במדריך השידורים, שעות מבוזבזות או כל תופעה לא רצויה אחרת.</disclaimer>
+    <disclaimer lang="hr_HR">Ovo je nestabilan softver! Autori nisu na koji način odgovorani za neuspjele snimke, netočna vremena, izgubjene sate, ili bilo koje druge neželjene učinke...</disclaimer>
+    <disclaimer lang="hu_HU">Ez nem stabil szoftver! A készítők nem vállalnak felelősséget, a hibás felvételért, rossz időzítésért, elvesztegetett időért...</disclaimer>
+    <disclaimer lang="hy_AM">Սա անկայուն ծրագրային ապահովում է: Հեղինակները պատասխանատու չեն վատ ձայնագրումների, սխալ ժամանակացույցերի, կորած ժամանակի կամ այլ ոչ ցանկալի երևույթների համար:</disclaimer>
+    <disclaimer lang="id_ID">Ini merupakan software yang tidak stabil! Penulis tidak bertanggung jawab untuk rekaman gagal, timer salah, waktu terbuang, atau efek tak diinginkan lainnya...</disclaimer>
+    <disclaimer lang="is_IS">Þetta er óstöðugur hugbúnaður! Höfundarnir eru á engann hátt ábyrgir fyrir misheppnuðum upptökum, röngum upptökutímum, klukkustundum sem að fóru í súginn eða nokkrum öðrum óæskilegum áhrifum.</disclaimer>
+    <disclaimer lang="it_IT">Questo programma non è stabile! Gli autori non sono in alcun modo responsabili per registrazioni fallite, timer non corretti, ore perse, o altri effetti indesiderati..</disclaimer>
+    <disclaimer lang="ja_JP">これは不安定なソフトウェアです！本プログラムの作者は、録画の失敗、正確に作動しなかったタイマー、無駄にした時間、その他あらゆる好ましくない結果について責任を負わないものとします。</disclaimer>
+    <disclaimer lang="ko_KR">이 소프트웨어는 불안정합니다! 제작자는 녹화 실패, 부정확한 타이머, 시간 낭비 및 기타 예상하지 못한 결과에 대해 책임지지 않습니다..</disclaimer>
+    <disclaimer lang="lt_LT">Tai yra nestabili programinė įranga! Autorius jokiu būdu neatsakingas už nepavykusius įrašus, neteisingus laikmačius, iššvaistytas valandas, ar nutikus kitiems nepageidaujamiems poveikiams ...[COLOR=red](Kodi.lt siūlo/rekomenduoja testuojant šį priedą persijungti į Anglų [orinali] kalbą)[/COLOR]</disclaimer>
+    <disclaimer lang="lv_LV">Šī ir nestabila programmatūra! Autori nav atbildīgi par nesanākušiem ierakstiem, nepareiziem taimeriem, iztērētām stundām vai jebkādiem citiem nevēlamiem efektiem..</disclaimer>
+    <disclaimer lang="mk_MK">Ова е нестабилен софтвер! Авторите не се во никој случај одговорни за неуспешни снимања, грешни тајмери, други непосакувани ефекти...</disclaimer>
+    <disclaimer lang="mn_MN">Тус програм нь гүйцэд хийгдэж дуусаагүй! Зохиогч нь алдаатай бичлэг, цагийн буруу хөтлөлт, алдагдсан цаг хугацаа эсвэл бусад ямар нэгэн хүсээгүй үр дүнд хариуцлага хүлээхгүй.</disclaimer>
+    <disclaimer lang="ms_MY">Ini merupakan perisian tidak stabil! Pengarang tidak bertanggungjawab atas kegagalan rakaman, pemasa tidak betul, masa yang dibazirkan, atau apa jua kesan yang tidak dikehendaki..</disclaimer>
+    <disclaimer lang="mt_MT">Dan il-programm mhuwiex stabbli! L-Awturi m'humiex responsabbli bl-ebda mod għal rekordings li ma jirnexxewx, arloġġi żbaljati, siegħat moħlija, jew kwalunkwe effett ieħor mhux mixtieq.</disclaimer>
+    <disclaimer lang="nb_NO">Dette er ustabilt programvare! Forfatterne er ikke ansvarlig på noen måte for ødelagte opptak, feile timere, bortkastede timer, eller andre uønskede hendinger...</disclaimer>
+    <disclaimer lang="nl_NL">Dit is instabiele software! De auteurs zijn op geen enkele wijze verantwoordelijk voor mislukte opnames, onjuiste timers, verspilde uren, of andere ongewenste effecten ..</disclaimer>
+    <disclaimer lang="pl_PL">Oprogramowanie nadal jest w fazie rozwoju i jest niestabilne! Autorzy w żaden sposób nie są odpowiedzialni za nieudane nagrania, błędy w harmonogramie nagrań, zmarnowany czas ani jakiekolwiek inne niepożądane efekty.</disclaimer>
+    <disclaimer lang="pt_BR">Este é um software instável! Os autores não são responsáveis por gravações com falhas, agendamentos incorretos, tempo desperdiçado, ou quaisquer outros efeitos indesejáveis...</disclaimer>
+    <disclaimer lang="pt_PT">Este software é instável! Os autores não são responsáveis por falhas na gravação, temporizadores incorrectos, horas perdidas ou outro qualquer efeito não desejado... </disclaimer>
+    <disclaimer lang="ro_RO">Acesta nu este o aplicație definitivă! Autorii nu sunt în nici un fel responsabili pentru înregistrări eșuate, cronometre incorecte, ore pierdute, sau orice alte efecte nedorite...</disclaimer>
+    <disclaimer lang="ru_RU">Это тестовая программа! Авторы не несут никакой ответственности за испорченные записи, неверные таймеры, потраченное время и прочие нежелательные эффекты..</disclaimer>
+    <disclaimer lang="si_LK">මෙය අස්ථිර මෘදුකාංගයකි! මෙහි සිදුවන පටිගත කිරීම් අසාර්ථක වීම්, සාවද්‍ය මුහුර්තක, නාස්ති වූ කාලයන්, හෝ වෙනත් යමිකිසි නුසුදුසු බලපෑම් සඳහා කතෘ වග කියනු නොලැබේ.</disclaimer>
+    <disclaimer lang="sk_SK">Tento softvér nie je stabilný! Autori nenesú žiadnu zodpovednosť za chybné nahrávky vysielania, nesprávne časovače alebo iné neželané udalosti spôsobené týmto softvérom..</disclaimer>
+    <disclaimer lang="sl_SI">To je nestabilna programska oprema! Avtorji niso odgovorni za neuspela snemanja, nepravilne časovnike, zapravljen čas in katerikoli drug neželen učinek...</disclaimer>
+    <disclaimer lang="sq_AL">Ky program nuk është ende stabil! Autorët e këtij programi nuk janë në as një menyr përgjegjës për rregistrime të gabuara, timer të pasaktë, kohë të humbur ose efekte të tilla të padëshirueshme.</disclaimer>
+    <disclaimer lang="sr_RS">Овај софтвер је нестабилан! Аутори ни на који начин нису одговорни за неуспела снимања, неисправне тајмере, изгубљене сате, или било које друге нежељене ефекте.</disclaimer>
+    <disclaimer lang="sr_RS@latin">Овај софтвер је нестабилан! Аутори ни на који начин нису одговорни за неуспела снимања, неисправна заказана снимања, изгубљене сате или друге нежељене ефекте.</disclaimer>
+    <disclaimer lang="sv_SE">Detta är ostabil mjukvara! Upphovsmännen är inte ansvariga för misslyckade inspelningar, inkorrekta timers, bortslösade timmar, eller någon annan oönskad effekt..</disclaimer>
+    <disclaimer lang="szl">To je niystabilny softwer! Autōry niy sōm ôdpedzialne za niypodarzōne graniy, niynŏleżne godziny EPG, stracōne godziny i inksze niychciane efekty.</disclaimer>
+    <disclaimer lang="te_IN">ఇది అస్థిర సాఫ్ట్వేర్! విఫలమైన రికార్డింగ్లు, తప్పు టైమర్లు, వృధా గంటల, లేదా ఏ ఇతర అవాంఛనీయ ప్రభావాలకు ఏ విధంగా రచయితలు భాద్యుతులు కారు.</disclaimer>
+    <disclaimer lang="tg_TJ">Ин нармафзори ноустувор аст! Муаллифон барои вайрониҳои сабт, вақтсанҷҳои нодуруст, соатҳои бефоида ва дигар таъсирҳои номатлуб ҷавобгар намебошанд.</disclaimer>
+    <disclaimer lang="tr_TR">Bu kararsız bir yazılımdır! Yapımcılar hatalı kayıtlardan, bozuk sürelerden, harcanan vakitten veya herhangi bir olumsuz etkiden dolayı sorumlu tutulamaz.</disclaimer>
+    <disclaimer lang="uk_UA">Це нестабільна програма! Автори не несуть відповідальності за попсуті записи, неправильні таймери, втрачений час та інші небажані ефекти.</disclaimer>
+    <disclaimer lang="vi_VN">Đây là phần mềm không ổn định! Các tác giả không chịu trách nhiệm đối với các lỗi thu chương trình, hẹn giờ không chính xác, giờ lãng phí, hoặc bất kỳ tác dụng không mong muốn khác..</disclaimer>
+    <disclaimer lang="zh_CN">这是不稳定版的软件！作者不对录像失败、错误定时造成时间浪费或其它不良影响负责。</disclaimer>
+    <disclaimer lang="zh_TW">這是測試版軟體！其原創作者並無法對於以下情況負責，包含：錄影失敗，不正確的定時設定，多餘時數，或任何產生的其它不良影響...</disclaimer>
+    <platform>linux</platform>
+  </extension>
+</addon>
+<addon
+  id="pvr.iptvsimple"
+  version="1.12.7"
+  name="PVR IPTV Simple Client"
+  provider-name="nightik">
+  <requires>
+    <c-pluff version="0.1"/>
+    <import addon="xbmc.pvr" version="4.1.0"/>
+  </requires>
+  <extension
+    point="xbmc.pvrclient"
+    library_linux="pvr.iptvsimple.so"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="bg_BG">Kodi ПВР добавка за поддръжка на IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="ca_ES">Complement PVR de Kodi per al suport d'IPTV https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="cs_CZ">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="cy_GB">Ychwanegyn recordydd Kodi ar gyfer cefnogi IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="da_DK">Kodi PVR addon til IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="de_DE">Kodi PVR Addon für IPTV Unterstützung. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="el_GR">Πρόσθετο του Kodi για PVR, με υποστήριξη IPTV. Για λεπτομέρειες επισκεφθείτε το: https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="en_AU">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="en_GB">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="en_NZ">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="en_US">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="es_AR">Addon Kodi PVR  para soporte IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="es_ES">Kodi PVR addon para soporte IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="fi_FI">Kodi PVR lisäosa IPTV tuella. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="fr_CA">Addiciel de numériscope Kodi pour la prise en charge de IPTV https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="fr_FR">Extension enregistreur vidéo (PVR) pour la gestion IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="gl_ES">Complemento PVR do Kodi de soporte á IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="he_IL">לקוח טלוויזיה חיה עם תמיכה ב־IPTV.&#10;https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="hr_HR">Kodi PVR dodatak za IPTV podršku. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="hu_HU">Kodi PVR kiegészítő IPTV támogatással. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="id_ID">Pengaya PVR Kodi untuk dukungan IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="is_IS">Kodi upptökuviðbót fyrir stuðning við IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="it_IT">Addon PVR Kodi per il supporto IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="ja_JP">IPTV をサポートする Kodi PVR アドオンです。 https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="ko_KR">IPTV 지원을 위한 Kodi PVR 애드온. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="lt_LT">Kodi PVR priedas IPTV palaikymui. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="lv_LV">Kodi PVR pielikums IPTV atbalstam. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="mk_MK">Kodi PVR додаток за IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="ms_MY">Tambahan PVR Kodi untuk sokongan IPTV https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="mt_MT">PVR addon ta' Kodi għall-IPTV.  https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="nb_NO">Kodi PVR tillegg for IPTV støtte. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="nl_NL">Kodi PVR add-on voor IPTV ondersteuning. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="pl_PL">Klient telewizyjny dla telewizji internetowej. Więcej informacji o dodatku:  https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="pt_BR">Addon de PVR no Kodi com suporte a IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="pt_PT">Addon PVR do Kodi para suporte IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="ro_RO">Supliment PVR Kodi  pentru suport IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="ru_RU">Kodi PVR аддон для поддержки IPTV.  https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="sk_SK">Kodi PVR doplnok umožňujúci IPTV podporu. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="sl_SI">Kodijev dodatek PVR s podporo za IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="sr_RS">Kodi PVR додатни програм за IPTV подршку. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="sr_RS@latin">Kodi PVR dodatni program za IPTV podršku. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="sv_SE">PVR-tillägg med IPTV-support för Kodi. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="tr_TR">IPTV desteği için Kodi PVR eklentisi. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="uk_UA">PVR надбудова Kodi для підтримки IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="zh_CN">Kodi PVR 插件需要 IPTV 支持。https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <description lang="bg_BG">IPTV обикновен ПВР клиент. Поддържа m3u плейлисти, поточна телевизия за мултикаст/уникаст източници, слушане на радио канали и електронен програмен справочник.</description>
+    <description lang="ca_ES">Client senzill per a IPTV PVR amb support per a llistes de reproducció m3u, streaming de TV en viu multicast/unicast, reproducció de canals de ràdio i EPG.</description>
+    <description lang="cs_CZ">IPTV Simple PVR Client podporuje m3u playlisty, streemování  TV pro multicast/unicast zdroje, poslouchání Radia a EPG.</description>
+    <description lang="cy_GB">Cleient IPTV Simple PVR  Mae'n cynnal rhestrau m3u, ffrydio Teledu Byw o ffynonellau darlledu eang ac unigol, gwrando ar sianeli Radio ac Amserlen Rhaglenni.</description>
+    <description lang="da_DK">IPTV Simpel PVR klient understøttelse M3U-afspilningslister, streaming af direkte tv til multicast/unicast kilder, lytte til radio kanaler og EPG.</description>
+    <description lang="de_DE">IPTV Simple PVR Client unterstützt m3u Wiedergabelisten, Streaming von Live TV für Multicast/Unicast Quellen, Radiosender und EPG.</description>
+    <description lang="el_GR">Απλός Πελάτης PVR του IPTV, με υποστήριξη λιστών αναπαραγωγής m3u, αναπαραγωγή ροών Live TV για πηγές πολλαπλής/μοναδικής διανομής, ακρόαση ραδιοφωνικών καναλιών και EPG.</description>
+    <description lang="en_AU">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
+    <description lang="en_GB">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
+    <description lang="en_NZ">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
+    <description lang="en_US">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
+    <description lang="es_AR">Cliente simple PVR IPTV.  Reproduce de TV en Vivo multicast/unicast y listas m3u8&#10; . reproduce tambien canales de radio y GEP</description>
+    <description lang="es_ES">El cliente PVR IPTV Simple soporta listas M3U, reproducción de TV en Vivo para origenes multicast/unicast, escucha de canales de radio y EPG</description>
+    <description lang="fi_FI">IPTV Simple PVR Client tukee m3u soittolistoja, multicast/unicast LIVE TV toistoa, radiokanavia jaohjelmaopasta.</description>
+    <description lang="fr_CA">Client de numériscope simple pour IPTV, prenant en charge les listes de lecture m3u, la lecture en transit des télés en direct pour les sources de multidiffusion et de monodiffusion, l'écoute de chaînes radio, et le GÉP.</description>
+    <description lang="fr_FR">Le client enregistreur vidéo (PVR) IPTV Simple gère les listes de lecture M3U, la diffusion en continu de la TV en direct en mono ou multidiffusion, l'écoute des chaînes radio et le guide électronique des programmes TV.</description>
+    <description lang="gl_ES">O cliente PVR simple de IPTV soporta listaxes m3u, transmisión de TV en directo para fontes multicast/unicast, escoita de canles de Radio e Guía.</description>
+    <description lang="he_IL">לקוח טלוויזיה חיה IPTV Simple תומך ברשימות m3u, הזרמת שידורים חיים ממקור מרובב/ סטרים בודד, האזנה לתחנות רדיו והצגת לוח שידורים.</description>
+    <description lang="hr_HR">IPTV Simple PVR klijent podržava m3u popise izvođenja, streamanje TV programa s više ili jednog izvora, slušanje radio programa i elektronski programski vodič (EPG).</description>
+    <description lang="hu_HU">Az IPTV PVR kiegészítő támogatja m3u listák lejátszását, élő TV adások hálózati streamelését, rádióadók hallgatását EPG adatok kezelésével.</description>
+    <description lang="id_ID">IPTV, klien PTV sederhana yang mendukung playlist m3u, pengaliran siaran TV langsung untuk sumber multicast/unicast, mendengarkan radio dan EPG.</description>
+    <description lang="is_IS">Einfaldur upptökubiðlari fyrir IPTV sem styður m3u spilunarlista, streymingu af beinum atburðum frá multicast/unicast þjónustum, hlustun á útvarpsrásir og rafræna dagskrárvísa</description>
+    <description lang="it_IT">Il client IPTV Simple PVR supporta playlist m3u, streaming della Live TV per sorgenti multicast/unicast e ascoltare canali Radio ed EPG.</description>
+    <description lang="ja_JP">IPTV シンプル PVR クライアントは、m3u プレイリスト、マルチキャスト/ユニキャストのライブ TV ストリーミング、ラジオチャンネルや EPG の視聴をサポートしています。</description>
+    <description lang="ko_KR">IPTV Simple PVR 클라이언트는 m3u 재생목록, 스트리밍, 멀티캐스트/유니캐스트 소스의 TV 시청, 라디오 채널과 EPG를 통한 청취를 지원합니다.</description>
+    <description lang="lt_LT">IPTV Simple PVR klientas palaiko m3u grojaraščius, TV transliacijas iš multicast/unicast šaltinių, radijo stočių transliacijas ir EPG.</description>
+    <description lang="lv_LV">IPTV vienkāršais PVR klients atbalsta m3u spēļsarakstus, tiešraides TV straumēšanu multiraides/uniraides avotiem, radio kanālu klausīšanos un EPG.</description>
+    <description lang="mk_MK">IPTV Simple PVR Client поддржува m3u листи, гледање на Live TV од multicast/unicast извори, слушање Радио канали и EPG.</description>
+    <description lang="ms_MY">Klien PVR IPTV Simple menyokong senarai audio visual m3u, penstriman TV Langsung untuk sumber satu siaran/berbilang-siaran, mendengar saluran Radio dan EPG.</description>
+    <description lang="mt_MT">IPTV Simple PVR Client jiflaħ għal playlists m3u, streaming ta' TV Lajv għal sorsi multicast/unicast, smiegħ ta' stazzjonijiet tar-Radju u EPG.</description>
+    <description lang="nb_NO">IPTV Simple PVR klient støtter m3u spillelister, strømming av Live TV, lytting til radiokanaler og programguider.</description>
+    <description lang="nl_NL">IPTV simpele PVR cliënt ondersteunt m3u afspeellijsten, streaming van live TV voor multicast/unicast bronnen, luisteren naar radiozenders en EPG.</description>
+    <description lang="pl_PL">Klient telewizyjny dla telewizji internetowej obsługuje listy odtwarzania m3u, strumieniowanie kanałów radiowych i telewizyjnych ze źródeł punktowych i grupowych oraz funkcje przewodnika telewizyjnego.</description>
+    <description lang="pt_BR">O cliente de PVR IPTV Simple Client oferece suporte para listas m3u, transmissão de TV ao vivo de fontes multicast/unicast, transmissão de rádios e, ainda, suporte a guia de programação eletrônico - EPG.</description>
+    <description lang="pt_PT">Cliente PVR IPTV com suporte para listas de reprodução m3u, transmissão de TV em directo de fontes multidifusão/unidifusão, ouvir estações de rádio e EPG.</description>
+    <description lang="ro_RO">PVR Client IPTV suporta liste m3u, redare TV în direct pentru surse de multicast/unicast, ascultare canale radio si EPG.</description>
+    <description lang="ru_RU">Интерфейс для IPTV. Поддерживает просмотр потокового ТВ для юникаст/мультикаст источников, прослушивание радиоканалов и работу с электронным телегидом.</description>
+    <description lang="sk_SK">Jednoduchý IPTV PVR klient podporuje mp3 zoznamy súborov, streamovanie živého televízneho vysielania ako multicast/unicast zdroje, počúvanie rozhlasových kanálov a EPG.</description>
+    <description lang="sl_SI">IPTV Simple odjemalec PVR podpira sezname m3u, pretakanja TV v živo za vire multicast/unicast, poslušenje radijskih postaj in EPG.</description>
+    <description lang="sr_RS">IPTV Једноставан PVR Клијент подржава m3u листе за репродукцију, стримовање ТВ Уживо за multicast/unicast изворе, слушање Радио канала и EPG.</description>
+    <description lang="sr_RS@latin">IPTV Jednostavan PVR Klijent podržava m3u liste za reprodukciju, strimovanje TV Uživo za multicast/unicast izvore, slušanje Radio kanala i EPG.</description>
+    <description lang="sv_SE">IPTV Simple PVR Client stöder m3u-spellistor, strömmande Live-TV för multicast/unicast-källor, radiolyssning och EPG.</description>
+    <description lang="tr_TR">IPTV Basit PVR İstemcisi m3u çalma listeleri, multicast/unicast kaynaklar için Canlı TV akışı, radyo kanallarını dinleme ve EPG destekler.</description>
+    <description lang="zh_CN">IPTV 简单 PVR 前端支持 m3u 播放列表、多播/单播源直播电视、收听电台和电子节目单。</description>
+    <disclaimer lang="bg_BG">Тази програма е нестабилна! Авторите не носят отговорност за неуспешно възпроизвеждане, некоректни часове в електронния програмен справочник, пропиляното време и други нежелани ефекти.</disclaimer>
+    <disclaimer lang="ca_ES">Aquest programari és inestable! Els autors no es fan responsables de reproduccions fallides, horaris incorrectes a l'EPG, hores perdudes o qualsevol altre efecte no desitjat.</disclaimer>
+    <disclaimer lang="cs_CZ">Tento software není stabilní. Autoři nejsou žádným způsobem zodpovědní za selhání při nahrávání, neplatné časovače, ztracený čas, či jakékoliv jiné nežádoucí události...</disclaimer>
+    <disclaimer lang="cy_GB">Mae hwn yn feddalwedd ansad! Nid yw'r awduron yn gyfrifol mewn unrhyw ffordd am fethu recordio, amseru gwallus, oriau wedi eu gwastraffu nac effeithiau anymunol eraill.</disclaimer>
+    <disclaimer lang="da_DK">Dette er ustabil software! Ophavsmændene er på ingen måde ansvarlig for mislykkede afspilninger, forkerte EPG tider, spildte timer, eller andre bivirkninger.</disclaimer>
+    <disclaimer lang="de_DE">Dies ist instabile Software! Die Autoren sind in keiner Weise verantwortlich für fehlgeschlagene Wiedergaben, falsche EPG Zeiten, verschwendete Zeit oder unerwünschte Effekte jeglicher Art.</disclaimer>
+    <disclaimer lang="el_GR">Ασταθές πρόγραμμα! Οι δημιουργοί δεν είναι σε καμία περίπτωση υπεύθυνοι για αποτυχημένες εγγραφές, λανθασμένους χρονοδιακόπτες, χαμένες ώρες, ή κάθε είδους ανεπιθύμητα αποτελέσματα.</disclaimer>
+    <disclaimer lang="en_AU">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
+    <disclaimer lang="en_GB">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
+    <disclaimer lang="en_NZ">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
+    <disclaimer lang="en_US">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
+    <disclaimer lang="es_AR">Este es un software inestable. El autor no se hace responsable por reproducciones fallidas, datos de GEP incorrectos, horas perdidas o cualquier otro efecto indeseable.</disclaimer>
+    <disclaimer lang="es_ES">Este es un software inestable! El autor no se hace responsable de reproducciones fallidas, datos de EPG incorrectos, horas perdidas o cualquier otro efecto indeseado.</disclaimer>
+    <disclaimer lang="fi_FI">Tämä on epävakaa ohjelma! Ohjelman kirjoittavat eivät vastaa millään tavalla epäonnistuneista toistoista, vääristä EPG ajoista, hukatusta ajasta tai muista ei-halutuista tapahtumista.</disclaimer>
+    <disclaimer lang="fr_CA">Ce logiciel est instable! Les auteurs ne sont aucunement responsables des lectures  défaillantes, d'horaires erronés du GÉP, des heures perdues ou tout autre effet indésirable.</disclaimer>
+    <disclaimer lang="fr_FR">Logiciel en cours d'élaboration ! Les auteurs ne sont en aucun cas responsables de l'échec des enregistrements, programmations défectueuses, temps perdu ou autres effets indésirables.</disclaimer>
+    <disclaimer lang="gl_ES">Este software non é estábel! Os autores non se fan responsábeis dos erros na reproducción, horarios incorrectos na Guía, horas vencidas, e otros efectos non desexados.</disclaimer>
+    <disclaimer lang="he_IL">זוהי איננה הרחבה יציבה! המפתחים אינם אחראים על כשלון בניגון, זמנים שגויים במדריך השידורים, שעות מבוזבזות או כל תופעה לא רצויה אחרת.</disclaimer>
+    <disclaimer lang="hr_HR">Ovo je nestabilan softver! Autori nisu ni na koji način odgovorani za neuspjelo snimanje, netočna zakazana snimanja, izgubjene sate, ili bilo koje druge neželjene učinke...</disclaimer>
+    <disclaimer lang="hu_HU">Ez nem stabil szoftver! A készítők nem vállalnak felelősséget, a hibás felvételért, rossz időzítésért, elvesztegetett időért...</disclaimer>
+    <disclaimer lang="id_ID">Perangkat lunak ini belum stabil. Penulis tidak akan bertanggung-jawa untuk kegagalan penyetelan, waktu EPG yang tidak tepat, Waktu yang terbuang dan efek yang tidak diinginkan lainnya.</disclaimer>
+    <disclaimer lang="is_IS">Þetta er óstöðugur hugbúnaður! Höfundarnir eru á engan hátt ábyrgir fyrir misheppnuðum spilunum, röngum upptökutímum, klukkustundum sem að fóru í súginn eða nokkrum öðrum óæskilegum áhrifum.</disclaimer>
+    <disclaimer lang="it_IT">Questo software è instabile! Gli autori non sono in alcun modo responsabili per registrazioni fallite, timers incorretti, ore perse, o qualsiasi altro effetto indesiderato.</disclaimer>
+    <disclaimer lang="ja_JP">これは不安定なソフトウェアです！本プログラムの作者は、再生の失敗、EPG 時刻のずれ、無駄にした時間、その他あらゆる好ましくない結果について責任を負わないものとします。</disclaimer>
+    <disclaimer lang="ko_KR">이 소프트웨어는 불안정합니다! 재생 실패, 정확하지 않은 EPG 시각, 시간 낭비, 의도하지 않은 현상에 대해 제작자는 어떤 책임도 지지 않습니다.</disclaimer>
+    <disclaimer lang="lt_LT">Tai yra nestabili programinė įranga! Autoriai nėra atsakingi dėl nepavykusio atkūrimo, klaidingo EPG laiko, prarastų valandų ar kito nepageidaujamo poveikio.</disclaimer>
+    <disclaimer lang="lv_LV">Šī ir nestabila programmatūra! Autori nav atbildīgi par neizdevušos atskaņošanu, nepareizu EPG laiku, iztērētām stundām vai jebkādiem citiem nevēlamiem efektiem.</disclaimer>
+    <disclaimer lang="mk_MK">Ова е нестабилен софтвер! Авторите во никој случај не се одговорни за неуспешно гледање, неточни времиња во EPG, вашето потрошено време или било кои непосакувани ефекти.</disclaimer>
+    <disclaimer lang="ms_MY">Perisian ini tidak stabi! Pengarang tidak bertanggungjawab atas kegagalan memainkan, pemasa EPG yang tidak betul, pembaziran masa atau sebarang kesan tidak diingini.</disclaimer>
+    <disclaimer lang="mt_MT">Dan il-programm mhuwiex stabbli!  L-awturi m'huma bl-ebda mod responsabbli għal daqq li ma jirnexxiex, ħinijiet tal-EPG żbaljati, siegħat moħlija jew kwalunkwe effet ieħor mhux mixtieq.</disclaimer>
+    <disclaimer lang="nb_NO">Dette er et ustabilt program! Skaperne er på ingen måte ansvarlig for feil ved avspilling, feil programguide tide, bortkastede timer eller andre uønskede ting.</disclaimer>
+    <disclaimer lang="nl_NL">Deze software is niet 100% stabiel! De auteurs zijn op geen enkele wijze aansprakelijk voor mislukte opnames, incorrecte EPG tijden, verspilde uren, of enig ander ongewild neveneffect..</disclaimer>
+    <disclaimer lang="pl_PL">Oprogramowanie nadal jest w fazie rozwoju i jest niestabilne! Autorzy w żaden sposób nie są odpowiedzialni za nieudane nagrania, błędy w harmonogramie nagrań, zmarnowany czas ani jakiekolwiek inne niepożądane efekty.</disclaimer>
+    <disclaimer lang="pt_BR">Este é um software instável! Os autores não são responsáveis por falhas nas reproduções, horários incorretos no EPG, horas perdidas ou quaisquer outros efeitos indesejáveis.</disclaimer>
+    <disclaimer lang="pt_PT">Este software é instável! Os autores não se responsabilizam por falhas nas reproduções, horários do EPG incorrectos, ou outro qualquer efeito não desejado.</disclaimer>
+    <disclaimer lang="ro_RO">Acest software este instabil! Autorii nu sunt responsabili în nici un fel pentru înregistrări eșuate, cronometrări EPG incorecte, ore pierdute sau orice alte efecte nedorite.</disclaimer>
+    <disclaimer lang="ru_RU">Это нестабильная программа! Авторы не несут ответственности за неудачные воспроизведение, неверные время EPG, потраченное время и прочие нежелательные эффекты.</disclaimer>
+    <disclaimer lang="sk_SK">Toto je nestabilný softvér! Autori nie sú v žiadnom prípade zodpovední za chybné prehrávanie, nesprávne časy EPG, premrhané hodiny alebo akékoľvek iné nežiadúce účinky.</disclaimer>
+    <disclaimer lang="sl_SI">To je nestabilna programska oprema! Avtorji niso odgovorni za neuspela predvajanja, nepravilne čase v EPG, zapravljen čas in katerikoli drug neželen učinek.</disclaimer>
+    <disclaimer lang="sr_RS">Овај софтвер је нестабилан! Аутори ни на који начин нису одговорни за неуспела снимања, неисправне тајмере, изгубљене сате, или било које друге нежељене ефекте.</disclaimer>
+    <disclaimer lang="sr_RS@latin">Ovaj softver je nestabilan! Autori ni na koji način nisu odgovorni za neuspela snimanja, neispravne tajmere, izgubljene sate, ili bilo koje druge neželjene efekte.</disclaimer>
+    <disclaimer lang="sv_SE">Denna mjukvara är ostabil! Författarna kan inte på något sätt hållas ansvariga för felaktiga uppspelningar, EPG-tider, bortslösade timmar eller andra oönskade effekter.</disclaimer>
+    <disclaimer lang="szl">To je niystabilny softwer! Autōry niy sōm ôdpedzialne za niypodarzōne graniy, niynŏleżne godziny EPG, stracōne godziny i inksze niychciane efekty.</disclaimer>
+    <disclaimer lang="tr_TR">Bu kararsız bir yazılımdır! Yazanlar oynatma hatası, yanlış EPG zamanları, harcanmış saatler ya da diğer etkilerden sorumlu değildir.</disclaimer>
+    <disclaimer lang="zh_CN">这是不稳定版的软件！作者不对录像失败、错误定时造成时间浪费或其它不良影响负责。</disclaimer>
+    <platform>linux</platform>
+  </extension>
+</addon>
+<addon id="service.multimedia.vdr-addon"
+       name="VDR PVR Backend"
+       version="7.0.0"
+       provider-name="openelec.tv">
+  <requires>
+    <import addon="os.openelec.tv" version="7.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+    <import addon="pvr.vdr.vnsi" version="0.0.0" />
+    <import addon="script.config.vdr" version="0.0.0" />
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>vdr: A powerful DVB TV application</summary>
+    <description>
+This project describes how to build your own digital satellite receiver and video disk recorder. It is based mainly on the DVB-S digital satellite receiver card, which used to be available from Fujitsu Siemens and the driver software developed by the LinuxTV project.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="script.config.vdr"
+       name="VDR Configuration"
+       version="1.0.8"
+       provider-name="OpenELEC">
+   <requires>
+     <import addon="os.openelec.tv" version="5.0"/>
+     <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de">VDR-Sendersuchlauf und DiSEqC-Konfiguration</summary>
+    <summary lang="en">VDR channel scan and Diseqc Configuration</summary>
+    <summary lang="en_US">VDR channel scan and DiSEqC Configuration</summary>
+    <summary lang="lt">VDR kanalų paieška ir Diseqc konfigūravimas</summary>
+    <summary lang="nl">VDR kanaal scan en Diseqc configuratie</summary>
+    <summary lang="pl">Skanowanie kanałów i konfiguracja Diseqc</summary>
+    <summary lang="pt_BR">Escanear canais VDR e Configuração Diseqc</summary>
+    <description lang="de">VDR-Sendersuchlauf und DiSEqC-Konfiguration</description>
+    <description lang="en">VDR channel scan and Diseqc Configuration</description>
+    <description lang="en_US">VDR channel scan and DiSEqC Configuration</description>
+    <description lang="lt">VDR kanalų paieška ir Diseqc konfigūravimas</description>
+    <description lang="nl">VDR kanaal scan en Diseqc configuratie</description>
+    <description lang="pl">Skanowanie kanałów i konfiguracja Diseqc</description>
+    <description lang="pt_BR">Escanear canais VDR e Configuração Diseqc</description>
+    <language></language>
+    <platform>all</platform>
+  </extension>
+</addon>
+</addons>
